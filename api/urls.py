@@ -5,7 +5,7 @@ from django.conf.urls import url,include
 
 router = routers.DefaultRouter()
 router.register(r'consumption', ConsumptionViewSet)
-router.register(r'consumptionxml', ConsumptionXMLViewSet)
+router.register(r'xml/consumption', ConsumptionXMLViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
