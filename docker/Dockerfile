@@ -10,6 +10,7 @@ WORKDIR /repo/
 RUN pip3 install -r requirements.txt
 RUN python3 manage.py makemigrations api
 RUN python3 manage.py migrate
+RUN python3 manage.py collectstatic --no-input
 
 EXPOSE 8000
 
