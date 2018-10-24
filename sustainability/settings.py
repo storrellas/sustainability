@@ -83,6 +83,14 @@ DATABASES = {
     }
 }
 
+REST_FRAMEWORK = {
+  'DEFAULT_PARSER_CLASSES': (
+    'rest_framework_xml.parsers.XMLParser',
+  ),
+    'DEFAULT_RENDERER_CLASSES': (
+    'rest_framework_xml.renderers.XMLRenderer',
+  ),
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
