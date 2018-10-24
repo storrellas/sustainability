@@ -8,7 +8,7 @@ RUN apk add --no-cache --update python3 bash postgresql-dev build-base python3-d
 ADD . /repo/
 WORKDIR /repo/
 RUN pip3 install -r requirements.txt
-RUN python3 manage.py makemigrations viewer
+RUN python3 manage.py makemigrations api
 RUN python3 manage.py migrate
 
 EXPOSE 8000
