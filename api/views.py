@@ -14,8 +14,25 @@ from .models import Consumption
 # Create your views here.
 class ConsumptionViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    retrieve:
+        Return a single item of Consumption
+
+    list:
+        Return a list of Consumption
+
+    create:
+        Creates a Consumption model
+
+    destroy:
+        Delete a Consumption model
+
+    update:
+        Update a Consumption model
+
+    partial_update:
+        Update a Consumption model
     """
+
     queryset = Consumption.objects.all()
     serializer_class = ConsumptionSerializer
     renderer_classes = (JSONRenderer, )
@@ -23,7 +40,23 @@ class ConsumptionViewSet(viewsets.ModelViewSet):
 # Create your views here.
 class ConsumptionXMLViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    retrieve:
+        Return a single item of Consumption in XML
+
+    list:
+        Return a list of Consumption in XML
+
+    create:
+        Creates a Consumption model in XML
+
+    destroy:
+        Delete a Consumption model in XML
+
+    update:
+        Update a Consumption model in XML
+
+    partial_update:
+        Update a Consumption model in XML
     """
     queryset = Consumption.objects.all()
     serializer_class = ConsumptionSerializer

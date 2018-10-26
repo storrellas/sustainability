@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from rest_framework_swagger.views import get_swagger_view
 
-schema_view = get_swagger_view(title='Sustainability')
+schema_view = get_swagger_view(title='GreenIntelli')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
